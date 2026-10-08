@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // 1. Kişi nesnesi oluşturuluyor (Adını, soyadını ve projeye ekleyeceğin resmin tam adını buraya yazıyorsun)
+        // 1. Kişi nesnesi oluşturuluyor 
         Kisi kisi = new Kisi("Göknur", "Kahraman", "goknur.kahraman@klu.edu.tr", "profil.jpg.jpeg");
 
         // 2. Hayali iş deneyimlerini tutacak liste oluşturuluyor
