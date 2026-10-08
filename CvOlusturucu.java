@@ -19,7 +19,7 @@ public class CvOlusturucu {
             PdfWriter.getInstance(document, new FileOutputStream(dosyaAdi));
             document.open();
 
-            // 1. DİKKAT: ÖNCE FOTOĞRAFI EKLİYORUZ Kİ EN ÜSTTE KONUMLANSIN
+            
             try {
                 Image img = Image.getInstance(kisi.getFotografYolu());
                 img.scaleAbsolute(100f, 100f);
@@ -29,20 +29,20 @@ public class CvOlusturucu {
                 document.add(new Paragraph("[Fotograf bulunamadi: " + kisi.getFotografYolu() + "]"));
             }
 
-            // 2. ŞİMDİ KİŞİSEL BİLGİLERİ EKLİYORUZ
+            // KİŞİSEL BİLGİLER
             document.add(new Paragraph("Kisisel Bilgiler"));
             document.add(new Paragraph("--------------------------------------------------"));
             document.add(new Paragraph("Ad Soyad: " + kisi.getAd() + " " + kisi.getSoyad()));
             document.add(new Paragraph("E-posta: " + kisi.getEmail()));
 
-            // Araya boşluklar bırakıyoruz ki iş deneyimleri resmin altında kalmasın
+            
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
             document.add(new Paragraph(" "));
 
-            // 3. İŞ DENEYİMLERİ
+            //  İŞ DENEYİMLERİ
             document.add(new Paragraph("Is Deneyimleri"));
             document.add(new Paragraph("--------------------------------------------------"));
 
